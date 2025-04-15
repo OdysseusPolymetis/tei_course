@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-<h1>(Open Document Text) odt &gt; TEI  (<a href="./odt_tei.xsl">odt_tei.xsl</a>)</h1>
+<h1>(Open Document Text) odt &gt; TEI  (<a href="./odt2tei.xsl">odt2tei.xsl</a>)</h1>
 
 <p>Vous qui entrez, laissez toute espérance ! (de comprendre)</p>
 
@@ -88,7 +88,7 @@ la sortie en la traitant avec d'autres filtres (expressions régulières, XSLT).
   xmlns:php="http://php.net/xsl"
   extension-element-prefixes="date exslt php"
   >
-  <xsl:import href="odette.xsl"/>
+  <xsl:import href="./odette.xsl"/>
   <!-- Where to project links to pictures and other media -->
   <xsl:param name="media_dir"/>
   <xsl:param name="lang">
