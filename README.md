@@ -1,5 +1,5 @@
 # **tei_course**
-bits of code for tei students
+bits of code for tei students. Odette was originally programmed by Frédéric Glorieux.
 <br>
 # Known styles
 ```xml
