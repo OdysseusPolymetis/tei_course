@@ -13,6 +13,7 @@ BSD-3-Clause https://opensource.org/licenses/BSD-3-Clause
 © 2010 Frederic.Glorieux@fictif.org et École nationale des chartes
 © 2007 Frederic.Glorieux@fictif.org
 © 2005 ajlsm.com (Cybertheses)
+Modifié en 2026 par Marianne Reboul
 
 <p lang="en-FR">
 This transformation takes as input the OpenDocument XML (eg OpenOffice.org)
@@ -308,6 +309,9 @@ case encountered, seems logic, but not fully tested
           <xsl:when test="starts-with($class, 'heading')"/>
           <xsl:when test="starts-with($class, 'titre')"/>
           <xsl:when test="starts-with($class, 'standard')"/>
+          <xsl:when test="$class = 'acte'">
+            <xsl:attribute name="type">act</xsl:attribute>
+          </xsl:when>
           <xsl:otherwise>
             <xsl:attribute name="type">
               <xsl:value-of select="$class"/>
